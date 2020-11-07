@@ -5,4 +5,5 @@ using namespace std;
 int main ()
 {
     generate_user();
+    generate_transactions(user);
 }

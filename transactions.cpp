@@ -2,10 +2,11 @@
 
 class transactions
 {
-    string id;
-    string sId;
-    string rId;
-    double amount;
+    public :
+        string id;
+        string sId;
+        string rId;
+        double amount;
 };
 
 vector<transactions> trans;

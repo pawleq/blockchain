@@ -5,6 +5,7 @@
 #include <algorithm>
 #include <vector>
 #include <string>
+#include <cstring>
 #include <sstream>
 #include <fstream>
 #include <numeric>
@@ -27,6 +28,7 @@ using std::uniform_int_distribution;
 
 #define NAMELENGTH 10
 #define USERAMOUNT 1000
+#define TRANSAMOUNT 10000
 #define KEYLENGTH 64
 
 

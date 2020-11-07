@@ -1,5 +1,7 @@
 #include "header.h"
 #include "user.cpp"
+#include "transactions.cpp"
+#include "hash.cpp"
 
 string alphaNumericStrings(int length)
 {
@@ -30,6 +32,20 @@ void generate_user()
         }
         temp.balance = rndwallet(gen);
         user.push_back(temp);
-        cout <<user[i].UserName<<" "<<user[i].key<<" "<<user[i].balance<<endl;
+        //cout <<user[i].UserName<<" "<<user[i].key<<" "<<user[i].balance<<endl;
+    }
+}
+void generate_transactions(vector<users> user)
+{
+    transactions transaction;
+    for(int i = 0; i < TRANSAMOUNT; i++) {
+        transaction.sId = user.at(rand()%(USERAMOUNT)).key;
+        do {
+            transaction.rId = user.at(rand()%(USERAMOUNT)).key;
+        } while (transaction.sId == transaction.rId);
+        transaction.amount = rand()%(USERAMOUNT);
+        transaction.id = hashing(transaction.sId + transaction.rId);
+        trans.push_back(transaction);
+        cout <<trans[i].sId<<" "<<trans[i].rId<<" "<<trans[i].amount<<" "<<trans[i].id<<endl;
     }
 }
