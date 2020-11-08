@@ -11,6 +11,7 @@
 #include <numeric>
 #include <chrono>
 #include <bitset>
+#include <utility>
 
 using std::endl;
 using std::cin;
@@ -25,11 +26,11 @@ using std::min;
 using std::bitset;
 using std::vector;
 using std::uniform_int_distribution;
+using std::to_string;
 
 #define NAMELENGTH 10
 #define USERAMOUNT 1000
 #define TRANSAMOUNT 10000
 #define KEYLENGTH 64
-
 
 #endif // HEADER_H_INCLUDED

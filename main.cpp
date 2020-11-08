@@ -6,4 +6,7 @@ int main ()
 {
     generate_user();
     generate_transactions(user);
+    generate_100trans(trans);
+    merkle(trans);
+    mining(trans, user);
 }

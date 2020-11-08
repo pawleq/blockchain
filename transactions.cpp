@@ -7,6 +7,6 @@ class transactions
         string sId;
         string rId;
         double amount;
+        bool bad = false;
 };
-
-vector<transactions> trans;
+    vector<transactions> trans;
