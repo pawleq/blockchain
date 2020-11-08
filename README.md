@@ -9,7 +9,7 @@ Second task for VU blockchain course
 
 3. Program mines blocks until the amount of transactions left are more than 100; 
 
-4. Finally, program outputs the hashes of blocks.\
+4. Finally, program outputs the hashes of blocks.
 
 Mined block hash : 0fb642331cd411b0dc6c294120e50770650ab5d81aa2e5ab8780c084b353ab96
 
