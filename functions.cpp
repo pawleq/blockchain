@@ -79,7 +79,7 @@ string merkle(vector<transactions> trans) //merkle function for both versions
         {
             hashes.push_back(hashing(trans.at(i).id));
         }
-        //cout <<hashes[i];
+        //cout <<hashes[i];m
     }
 
     while(hashes.size() != 1)
