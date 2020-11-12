@@ -32,7 +32,7 @@ vector<users> generate_user()
         }
         temp.balance = rndwallet(gen);
         user.push_back(temp);
-        //cout <<user[i].UserName<<" "<<user[i].key<<" "<<user[i].balance<<endl;
+        //cout <<user[i].UserName<<" "<<user[i].key<<" "<<user[i].balance<<endl;m
     }
     return user;
 }
