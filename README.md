@@ -1,15 +1,23 @@
 # blockchain
 Second task for VU blockchain course
 
+# How to use?
+
+1. Open *main.cpp* and run it.
+
+If you want to change the amount of users, transactions, just go to *header.h* where you can change constants of *USERAMOUNT*, *TRANSAMOUNT* to desired amount.
+
 # V0.1 tasks : 
 
 1. Generates a specific amount of users;
 
 2. Generates a specific amount of transactions which are made with user ID's;
 
-3. Program mines blocks until the amount of transactions left are more than 100; 
+3. Stores 100 transactions in one block;
 
-4. Finally, program outputs the hashes of blocks.
+4. Program mines blocks until the amount of transactions left are more than 100; 
+
+5. Finally, program outputs the hashes of blocks.
 
 Mined block hash : 0fb642331cd411b0dc6c294120e50770650ab5d81aa2e5ab8780c084b353ab96
 
@@ -26,3 +34,15 @@ Mined block hash : 0d4fe9159223396fe33061cd0b41cc45e0ccbedbba301aff6949291cb6835
 Mined block hash : 0f9b6f758fb96f8da30de54856c83845d431f4c527640820c3685dc45fdf6390
 
 and so on...
+
+# V0.2 tasks : 
+
+Added merkle root hash function;
+
+Added validation of transaction (if sender.amount > sender.balance -> transaction.erase)
+
+Added validation of transaction ID.
+
+*Five blocks candidates*
+
+
